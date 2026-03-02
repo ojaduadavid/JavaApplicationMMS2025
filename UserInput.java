@@ -14,10 +14,19 @@ public class UserInput{
 		int age = scan.nextInt();
 		scan.nextLine();
 		
+		System.out.print("Enter your gender(Male/Female): ");
+		String gender = scan.next();
+		
+		System.out.printf("Are you happy to learn java? (true/false: ");
+		boolean isHapppy = scan.nextBoolean();
+		
 		System.out.println("");
 		
 		
 		System.out.printf("Hello %s ,How are you today?%n",fullName);
-		System.out.printf("Nice meeting you , you are living in %s",address);
+		System.out.printf("Nice meeting you , you are living in %s%n",address);
+		System.out.printf("%s, you are %d years old%n",fullName,age);
+		System.out.printf("You are a %s%n ",gender);
+		System.out.printf("Are you happy to learn java? %b%n ",isHapppy);
 	}
 }	
